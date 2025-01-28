@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Table</title>
+</head>
+<body>
+<div class="table w-full ...">
+<div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+
+<nav
+class="
+relative
+flex w-full 
+items-center 
+justify-between 
+bg-zinc-50 py-2 
+shadow-dark-mild 
+lg:py-4">
+<div class="flex w-full items-center justify-between px-3">
+    <div class="flex items-center gap-3">
+        <p>Show</p>
+        <span class="text-black bg-[#E0E0E0] p-2 rounded rounded-xl">10</span>
+        <p>Entries</p>
+        <div class="flex px-3 py-2 rounded-xl border-2 border-[#9E9E9E] overflow-hidden max-w-md mx-auto">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192.904 192.904" width="16px"
+              class="fill-gray-600 mr-3 rotate-90">
+              <path
+                d="m190.707 180.101-47.078-47.077c11.702-14.072 18.752-32.142 18.752-51.831C162.381 36.423 125.959 0 81.191 0 36.422 0 0 36.423 0 81.193c0 44.767 36.422 81.187 81.191 81.187 19.688 0 37.759-7.049 51.831-18.751l47.079 47.078a7.474 7.474 0 0 0 5.303 2.197 7.498 7.498 0 0 0 5.303-12.803zM15 81.193C15 44.694 44.693 15 81.191 15c36.497 0 66.189 29.694 66.189 66.193 0 36.496-29.692 66.187-66.189 66.187C44.693 147.38 15 117.689 15 81.193z">
+              </path>
+            </svg>
+            <input type="text" placeholder="Search..." class="w-full outline-none bg-transparent text-[#9E9E9E] text-sm" />
+        </div>
+    </div>
+    <div>
+        <button class="bg-[#624DE3] text-white rounded rounded-[8px] py-[8px] px-[12px] font-bold flex gap-3 items-center"> <img src="assets/add.png" alt="add"> Add Customer</button>
+    </div>
+</div>
+</nav>
+    <table class="w-full text-sm text-left rtl:text-right text-black dark:text-gray-400">
+        <thead class="text-s text-black uppercase bg-white dark:bg-gray-700 dark:text-gray-400">
+            <tr>
+                <th scope="col" class="px-6 py-3">
+                    Tracking ID                
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Product
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Customer
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Date
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Amount
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Payment Mode
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Status
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Action
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="even:bg-white even:dark:bg-gray-900 odd:bg-gray-50 odd:dark:bg-gray-800 border-b border-gray-700 border-gray-200">
+                <th scope="row" class="px-6 py-4 font-medium text-black whitespace-nowrap dark:text-white">
+                    #20462
+                </th>
+                <td class="px-6 py-4">
+                    <div class="flex gap-2">
+                        <img src="assets/p1.png" alt="product">
+                        <p class="self-center ">Hat</p>
+                    </div>
+                </td>
+                <td class="px-6 py-4">
+                    Matt Dickerson
+                </td>
+                <td class="px-6 py-4">
+                    13/05/2022
+                </td>
+                <td class="px-6 py-4">
+                    $4.95
+                </td>
+                <td class="px-6 py-4">
+                    Transfer Bank
+                </td>
+                <td class="px-6 py-4">
+                    <a href="#" class="bg-[#EBF9F1] text-[#1F9254] p-2.5 rounded rounded-full">Delivered</a>
+                </td>
+                <td class="px-6 py-4 flex gap-2 ">
+                    <i class="cursor-pointer"><img src="assets/edit.png" alt="edit"></i>
+                    <i class="cursor-pointer"><img src="assets/trash.png" alt="delete"></i>
+                </td>
+            </tr>
+            <tr class="even:bg-white even:dark:bg-gray-900 odd:bg-gray-50 odd:dark:bg-gray-800 border-b dark:border-gray-700 border-gray-200">
+                <th scope="row" class="px-6 py-4 font-medium text-black whitespace-nowrap dark:text-white">
+                    #18933
+                </th>
+                <td class="px-6 py-4">
+                    <div class="flex gap-2">
+                        <img src="assets/p2.png" alt="product">
+                        <p class="self-center ">Laptop</p>
+                    </div>
+                </td>
+                <td class="px-6 py-4">
+                    Wiktoria
+                </td>
+                <td class="px-6 py-4">
+                    22/05/2022
+                </td>
+                <td class="px-6 py-4">
+                    $8.95
+                </td>
+                <td class="px-6 py-4">
+                    Cash on Delivery
+                </td>
+                <td class="px-6 py-4">
+                    <a href="#" class="bg-[#EBF9F1] text-[#1F9254] p-2.5 rounded rounded-full">Delivered</a>
+                </td>
+                <td class="px-6 py-4 flex gap-2 ">
+                    <i class="cursor-pointer"><img src="assets/edit.png" alt="edit"></i>
+                    <i class="cursor-pointer"><img src="assets/trash.png" alt="delete"></i>
+                </td>
+            <tr class="even:bg-white even:dark:bg-gray-900 odd:bg-gray-50 odd:dark:bg-gray-800 border-b dark:border-gray-700 border-gray-200">
+                <th scope="row" class="px-6 py-4 font-medium text-black whitespace-nowrap dark:text-white">
+                    #45169
+                </th>
+                <td class="px-6 py-4">
+                    <div class="flex gap-2">
+                        <img src="assets/p3.png" alt="product">
+                        <p class="self-center ">Phone</p>
+                    </div>
+                </td>
+                <td class="px-6 py-4">
+                    Trixie Bayrd
+                </td>
+                <td class="px-6 py-4">
+                    15/06/2022
+                </td>
+                <td class="px-6 py-4">
+                    $103.5
+                </td>
+                <td class="px-6 py-4">
+                    Cash on Delivery
+                </td>
+                <td class="px-6 py-4">
+                    <a href="#" class="bg-[#FEF2E5] text-[#CD6200] p-2.5 rounded rounded-full">process</a>
+                </td>
+                <td class="px-6 py-4 flex gap-2 ">
+                    <i class="cursor-pointer"><img src="assets/edit.png" alt="edit"></i>
+                    <i class="cursor-pointer"><img src="assets/trash.png" alt="delete"></i>
+                </td>>
+            </tr>
+            <tr class="even:bg-white even:dark:bg-gray-900 odd:bg-gray-50 odd:dark:bg-gray-800 border-b dark:border-gray-700 border-gray-200">
+                <th scope="row" class="px-6 py-4 font-medium text-black whitespace-nowrap dark:text-white">
+                    #34304
+                </th>
+                <td class="px-6 py-4">
+                    <div class="flex gap-2">
+                        <img src="assets/p4.png" alt="product">
+                        <p class="self-center ">Bag</p>
+                    </div>
+                </td>
+                <td class="px-6 py-4">
+                    Brad Manson
+                </td>
+                <td class="px-6 py-4">
+                    06/09/2022
+                </td>
+                <td class="px-6 py-4">
+                    $889.35
+                </td>
+                <td class="px-6 py-4">
+                    Transfer Bank
+                </td>
+                <td class="px-6 py-4">
+                    <a href="#" class="bg-[#FEF2E5] text-[#CD6200] p-2.5 rounded rounded-full">process</a>
+                </td>
+                <td class="px-6 py-4 flex gap-2 ">
+                    <i class="cursor-pointer"><img src="assets/edit.png" alt="edit"></i>
+                    <i class="cursor-pointer"><img src="assets/trash.png" alt="delete"></i>
+                </td>
+            <tr class="even:bg-white even:dark:bg-gray-900 odd:bg-gray-50 odd:dark:bg-gray-800 border-b dark:border-gray-700 border-gray-200">
+                <th scope="row" class="px-6 py-4 font-medium text-black whitespace-nowrap dark:text-white">
+                    #17188
+                </th>
+                <td class="px-6 py-4">
+                    <div class="flex gap-2">
+                        <img src="assets/p6.png" alt="product">
+                        <p class="self-center ">Headset</p>
+                    </div>
+                </td>
+                <td class="px-6 py-4">
+                    Sanderson
+                </td>
+                <td class="px-6 py-4">
+                    25/09/2022
+                </td>
+                <td class="px-6 py-4">
+                    $22.29
+                </td>
+                <td class="px-6 py-4">
+                    Cash on Delivery
+                </td>
+                <td class="px-6 py-4">
+                    <a href="#" class="bg-[#FBE7E8] text-[#A30D11] p-2.5 rounded rounded-full">Canceled</a>
+                    <td class="px-6 py-4 flex gap-2 ">
+                        <i class="cursor-pointer"><img src="assets/edit.png" alt="edit"></i>
+                        <i class="cursor-pointer"><img src="assets/trash.png" alt="delete"></i>
+                    </td>
+            <tr class="even:bg-white even:dark:bg-gray-900 odd:bg-gray-50 odd:dark:bg-gray-800 border-b dark:border-gray-700 border-gray-200">
+                <th scope="row" class="px-6 py-4 font-medium text-black whitespace-nowrap dark:text-white">
+                    #73003
+                </th>
+                <td class="px-6 py-4">
+                    <div class="flex gap-2">
+                        <img src="assets/p7.png" alt="product">
+                        <p class="self-center ">Mouse</p>
+                    </div>
+                </td>
+                <td class="px-6 py-4">
+                    Jun Redfern
+                </td>
+                <td class="px-6 py-4">
+                    04/10/2022
+                </td>
+                <td class="px-6 py-4">
+                    $54.95
+                </td>
+                <td class="px-6 py-4">
+                    Transfer Bank
+                </td>
+                <td class="px-6 py-4">
+                    <a href="#" class="bg-[#EBF9F1] text-[#1F9254] p-2.5 rounded rounded-full">Delivered</a>
+                </td>
+                    <td class="px-6 py-4 flex gap-2 ">
+                        <i class="cursor-pointer"><img src="assets/edit.png" alt="edit"></i>
+                        <i class="cursor-pointer"><img src="assets/trash.png" alt="delete"></i>
+                    </td>
+            </tr>
+            <tr class="even:bg-white even:dark:bg-gray-900 odd:bg-gray-50 odd:dark:bg-gray-800 border-b dark:border-gray-700 border-gray-200">
+                <th scope="row" class="px-6 py-4 font-medium text-black whitespace-nowrap dark:text-white">
+                    #58825
+                </th>
+                <td class="px-6 py-4">
+                    <div class="flex gap-2">
+                        <img src="assets/p8.png" alt="product">
+                        <p class="self-center ">Clock</p>
+                    </div>
+                </td>
+                <td class="px-6 py-4">
+                    Miriam Kidd
+                </td>
+                <td class="px-6 py-4">
+                    17/10/2022
+                </td>
+                <td class="px-6 py-4">
+                    $175.95
+                </td>
+                <td class="px-6 py-4">
+                    Transfer Bank
+                </td>
+                <td class="px-6 py-4">
+                    <a href="#" class="bg-[#EBF9F1] text-[#1F9254] p-2.5 rounded rounded-full">Delivered</a>
+                </td>
+                <td class="px-6 py-4 flex gap-2 ">
+                    <i class="cursor-pointer"><img src="assets/edit.png" alt="edit"></i>
+                    <i class="cursor-pointer"><img src="assets/trash.png" alt="delete"></i>
+                </td>
+            </tr>
+            <tr class="even:bg-white even:dark:bg-gray-900 odd:bg-gray-50 odd:dark:bg-gray-800 border-b dark:border-gray-700 border-gray-200">
+                <th scope="row" class="px-6 py-4 font-medium text-black whitespace-nowrap dark:text-white">
+                    #44122
+                </th>
+                <td class="px-6 py-4">
+                    <div class="flex gap-2">
+                        <img src="assets/p9.png" alt="product">
+                        <p class="self-center ">T-shirt</p>
+                    </div>
+                </td>
+                <td class="px-6 py-4">
+                    Dominic
+                </td>
+                <td class="px-6 py-4">
+                    24/10/2022
+                </td>
+                <td class="px-6 py-4">
+                    $249.95
+                </td>
+                <td class="px-6 py-4">
+                    Cash on delivery
+                </td>
+                <td class="px-6 py-4">
+                    <a href="#" class="bg-[#EBF9F1] text-[#1F9254] p-2.5 rounded rounded-full">Delivered</a>
+                </td>
+                <td class="px-6 py-4 flex gap-2 ">
+                    <i class="cursor-pointer"><img src="assets/edit.png" alt="edit"></i>
+                    <i class="cursor-pointer"><img src="assets/trash.png" alt="delete"></i>
+                </td>
+            </tr>
+            <tr class="even:bg-white even:dark:bg-gray-900 odd:bg-gray-50 odd:dark:bg-gray-800 border-b dark:border-gray-700 border-gray-200">
+                <th scope="row" class="px-6 py-4 font-medium text-black whitespace-nowrap dark:text-white">
+                    #89094
+                </th>
+                <td class="px-6 py-4">
+                    <div class="flex gap-2">
+                        <img src="assets/p10.png" alt="product">
+                        <p class="self-center ">Monitor</p>
+                    </div>
+                </td>
+                <td class="px-6 py-4">
+                    Shanice
+                </td>
+                <td class="px-6 py-4">
+                    01/11/2022
+                </td>
+                <td class="px-6 py-4">
+                    $833.95
+                </td>
+                <td class="px-6 py-4">
+                    Transfer Bank
+                </td>
+                <td class="px-6 py-4">
+                    <a href="#" class="bg-[#FBE7E8] text-[#A30D11] p-2.5 rounded rounded-full">Canceled</a>
+                </td>
+                <td class="px-6 py-4 flex gap-2 ">
+                    <i class="cursor-pointer"><img src="assets/edit.png" alt="edit"></i>
+                    <i class="cursor-pointer"><img src="assets/trash.png" alt="delete"></i>
+                </td>
+            </tr>
+            <tr class="even:bg-white even:dark:bg-gray-900 odd:bg-gray-50 odd:dark:bg-gray-800 border-b dark:border-gray-700 border-gray-200">
+                <th scope="row" class="px-6 py-4 font-medium text-black whitespace-nowrap dark:text-white">
+                    #85252
+                </th>
+                <td class="px-6 py-4">
+                    <div class="flex gap-2">
+                        <img src="assets/p1.png" alt="product">
+                        <p class="self-center ">Keyboard</p>
+                    </div>
+                </td>
+                <td class="px-6 py-4">
+                    Poppy-Rose
+                </td>
+                <td class="px-6 py-4">
+                    22/11/2022
+                </td>
+                <td class="px-6 py-4">
+                    $6.849
+                </td>
+                <td class="px-6 py-4">
+                    Transfer Bank
+                </td>
+                <td class="px-6 py-4">
+                    <a href="#" class="bg-[#FEF2E5] text-[#CD6200] p-2.5 rounded rounded-full">process</a>
+                </td>
+                <td class="px-6 py-4 flex gap-2 ">
+                    <i class="cursor-pointer"><img src="assets/edit.png" alt="edit"></i>
+                    <i class="cursor-pointer"><img src="assets/trash.png" alt="delete"></i>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- Pagination -->
+<nav class="flex items-center gap-x-1 justify-center m-4" aria-label="Pagination">
+    <button type="button" class="min-h-[38px] min-w-[38px] py-2 px-2.5 inline-flex justify-center items-center gap-x-1.5 text-sm rounded-lg text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none" aria-label="Previous" disabled="">
+      <span>Previous</span>
+    </button>
+    <div class="flex items-center gap-x-1">
+      <button type="button" class="min-h-[38px] min-w-[38px] flex justify-center items-center bg-[#624DE3] text-white py-2 px-3 text-sm rounded-lg focus:outline-none focus:bg-[#624DE3] focus:text-white disabled:opacity-50 disabled:pointer-events-none" aria-current="page">1</button>
+      <button type="button" class="min-h-[38px] min-w-[38px] flex justify-center items-center text-gray-800 bg-[#E0E0E0] hover:bg-gray-100 py-2 px-3 text-sm rounded-lg focus:outline-none focus:bg-[#624DE3] focus:text-white disabled:opacity-50 disabled:pointer-events-none">2</button>
+      <button type="button" class="min-h-[38px] min-w-[38px] flex justify-center items-center text-gray-800 bg-[#E0E0E0] hover:bg-gray-100 py-2 px-3 text-sm rounded-lg focus:outline-none focus:bg-[#624DE3] focus:text-white disabled:opacity-50 disabled:pointer-events-none">3</button>
+    </div>
+    <button type="button" class="min-h-[38px] min-w-[38px] py-2 px-2.5 inline-flex justify-center items-center gap-x-1.5 text-sm rounded-lg text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none" aria-label="Next">
+      <span>Next</span>
+    </button>
+  </nav>
+  <!-- End Pagination -->
+</div>
+</body>
+</html>
