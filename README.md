@@ -1,4 +1,4 @@
-#Tailwind CSS Table
+##Tailwind CSS Table
 
 This project features a responsive and styled data table built using Tailwind CSS. The table efficiently displays product orders with various details such as tracking ID, product name, customer, date, amount, payment mode, status, and actions.
 
