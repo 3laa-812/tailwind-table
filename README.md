@@ -1,23 +1,24 @@
-##Tailwind CSS Table
+# Tailwind CSS Table
 
-This project features a responsive and styled data table built using Tailwind CSS. The table efficiently displays product orders with various details such as tracking ID, product name, customer, date, amount, payment mode, status, and actions.
+## 📌 Project Overview
+This project features a **responsive and modern data table** built using **Tailwind CSS**. The table efficiently displays product orders with various details such as:
+- Tracking ID
+- Product Name
+- Customer Name
+- Date
+- Amount
+- Payment Mode
+- Status
+- Actions
 
-<h3>Features:</h3>
+## ✨ Features
+✅ **Responsive Design** – Adapts seamlessly to different screen sizes.  
+✅ **Tailwind CSS Styling** – Implements a clean and dark-themed table layout.  
+✅ **Search & Pagination** – Enables easy navigation and filtering of records.  
+✅ **Status Indicators** – Displays clear visual status tags (*Delivered, Process, Canceled*).  
+✅ **Action Buttons** – Allows editing and deleting customer data.  
+✅ **Add Customer Button** – A floating button to quickly add new customers.  
 
-Responsive Design: The table adapts to different screen sizes.
-
-Tailwind CSS Styling: Custom dark-themed table using Tailwind's utility classes.
-
-Search & Pagination: Allows easy navigation and filtering of records.
-
-Status Indicators: Orders are visually categorized as Delivered, Process, or Canceled.
-
-Action Buttons: Edit and delete functionalities for managing customer data.
-
-Floating Add Button: A button to quickly add new customers.
-
-<h3>Technologies Used:</h3>
-
-Tailwind CSS: For styling and layout.
-
-HTML: For structure.
+## 🛠️ Technologies Used
+- **Tailwind CSS** – For modern and flexible styling.
+- **HTML** – For structure.
